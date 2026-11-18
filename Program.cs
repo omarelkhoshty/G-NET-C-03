@@ -228,18 +228,33 @@ namespace GNET_C_03
 
     #region Question 14
     //Write a do-while loop that prints "Checking book..." exactly 3 times.
+    //internal class Program
+    //{
+    //static void Main(string[] args)
+    //    {
+    //        int count = 0;
+    //            do
+    //                {
+    //                Console.WriteLine("Checking book...");
+    //                count++;
+    //                } while (count < 3);
+    //            }
+    //    }
+    #endregion
+
+    #region Question 15
+    //Using the same books array, use a foreach loop to print every book title.
     internal class Program
     {
-    static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int count = 0;
-                do
-                    {
-                    Console.WriteLine("Checking book...");
-                    count++;
-                    } while (count < 3);
-                }
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            foreach (string book in books)
+            {
+                Console.WriteLine(book);
+            }
         }
+    }
     #endregion
 }
 
