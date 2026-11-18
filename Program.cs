@@ -185,27 +185,46 @@ namespace GNET_C_03
 
     #region Question 12
     //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for to print each book with its position number, like 1.Clean Code.
-    
+
+    // internal class Program
+    //{
+    //static void Main(string[] args)
+    //{
+    //    //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+    //    //for (int i = 0; i < books.Length; i++)
+    //    //{
+    //    //    Console.WriteLine($"{i + 1}. {books[i]}");
+    //    //}
+
+    //    // by format 
+    //    //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+    //    //for (int i = 0; i < books.Length; i++)
+    //    //{
+    //    //    Console.WriteLine(string.Format("{0}. {1}", i + 1, books[i]));
+    //    //}
+    //}
+
+    //}
+    #endregion
+
+    #region Question 13
+    //Using the same books array, use a while loop to print every book title.
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            //for (int i = 0; i < books.Length; i++)
-            //{
-            //    Console.WriteLine($"{i + 1}. {books[i]}");
-            //}
-
-            // by format 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; i++)
+            int index = 0;
+            while (index < books.Length)
             {
-                Console.WriteLine(string.Format("{0}. {1}", i + 1, books[i]));
+                Console.WriteLine(books[index]);
+                index++;
             }
         }
     }
-    #endregion
 
+    #endregion
 }
 
 
