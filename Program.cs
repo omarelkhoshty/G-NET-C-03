@@ -82,13 +82,27 @@ namespace GNET_C_03
 
     #region Question 6 
     //Build the same sentence as above, but using string interpolation ($"...").
-    internal class Program
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        string title = "Clean Code";
+    //        int pages = 464;
+    //        string result = $"Book: {title}, Pages: {pages}";
+    //        Console.WriteLine(result);
+    //    }
+    //}
+    #endregion
+
+    #region Question 7
+    //Build the same sentence again, but using string.Format().
+    internal class program
     {
         static void Main(string[] args)
         {
             string title = "Clean Code";
             int pages = 464;
-            string result = $"Book: {title}, Pages: {pages}";
+            string result = string.Format("Book: {0}, Pages: {1}", title, pages);
             Console.WriteLine(result);
         }
     }
