@@ -96,14 +96,35 @@ namespace GNET_C_03
 
     #region Question 7
     //Build the same sentence again, but using string.Format().
-    internal class program
+    //internal class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        string title = "Clean Code";
+    //        int pages = 464;
+    //        string result = string.Format("Book: {0}, Pages: {1}", title, pages);
+    //        Console.WriteLine(result);
+    //    }
+    //}
+    #endregion
+
+    #region Question 8 
+
+    //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than 300, otherwise prints "Short Book"
+    
+    internal class Program
     {
         static void Main(string[] args)
         {
-            string title = "Clean Code";
             int pages = 464;
-            string result = string.Format("Book: {0}, Pages: {1}", title, pages);
-            Console.WriteLine(result);
+            if (pages > 300)
+            {
+                Console.WriteLine("Long Book");
+            }
+            else
+            {
+                Console.WriteLine("Short Book");
+            }
         }
     }
     #endregion
