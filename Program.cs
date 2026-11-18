@@ -190,10 +190,17 @@ namespace GNET_C_03
     {
         static void Main(string[] args)
         {
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
+            //}
+
+            // by format 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             for (int i = 0; i < books.Length; i++)
             {
-                Console.WriteLine($"{i + 1}. {books[i]}");
+                Console.WriteLine(string.Format("{0}. {1}", i + 1, books[i]));
             }
         }
     }
