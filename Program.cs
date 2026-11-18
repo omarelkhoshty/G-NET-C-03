@@ -53,19 +53,35 @@ namespace GNET_C_03
     #region Question 4
     //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
 
-    internal class Program
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        StringBuilder sb = new StringBuilder();
+    //        sb.Append("Book List");
+    //        sb.Append(" - Updated");
+    //        sb.Replace("Book List", "Library");
+    //        Console.WriteLine(sb.ToString());
+    //    }
+    //}
+    #endregion
+
+    #region Question 5
+    //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
+    internal class program
     {
         static void Main(string[] args)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Book List");
-            sb.Append(" - Updated");
-            sb.Replace("Book List", "Library");
-            Console.WriteLine(sb.ToString());
+            string title = "Clean Code";
+            int pages = 464;
+            string result = "Book: " + title + ", Pages: " + pages;
+            Console.WriteLine(result);
         }
     }
     #endregion
+
 }
+
 
 
 
