@@ -280,19 +280,42 @@ namespace GNET_C_03
     #region Question 17 
 
     //Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
+    // internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+    //        foreach (string book in books)
+    //        {
+    //            if (book == "Refactoring")
+    //            {
+    //                continue; 
+    //            }
+    //            Console.WriteLine(book);
+    //        }
+    //    }
+    //}
+    #endregion
+
+    #region Question 18 
+
+    //Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, use return to exit the method early instead of printing anything.
     internal class Program
     {
         static void Main(string[] args)
         {
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string book in books)
+            PrintFirstBook(books);
+            string[] emptyBooks = { };
+            PrintFirstBook(emptyBooks);
+        }
+        static void PrintFirstBook(string[] books)
+        {
+            if (books.Length == 0)
             {
-                if (book == "Refactoring")
-                {
-                    continue; 
-                }
-                Console.WriteLine(book);
+                return;
             }
+            Console.WriteLine(books[0]);
         }
     }
     #endregion
